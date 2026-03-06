@@ -1,4 +1,4 @@
-# 📰 News Application
+# News Application
 
 A modern **React-based News Application** that fetches the latest headlines from a news API and displays them in a clean and responsive interface.  
 The application allows users to browse news by categories, read article summaries, and open full articles from the original source.
@@ -7,7 +7,7 @@ This project demonstrates how to build a **real-world API driven web application
 
 ---
 
-# 🚀 Features
+# Features
 
 - Fetches real-time news from a News API
 - Category-based news browsing
@@ -18,7 +18,7 @@ This project demonstrates how to build a **real-world API driven web application
 
 ---
 
-# 🧠 Project Purpose
+# Project Purpose
 
 The goal of this project is to practice and demonstrate:
 
@@ -32,7 +32,7 @@ This project can also serve as a **starter template for building news or content
 
 ---
 
-# 🛠 Tech Stack
+# Tech Stack
 
 ## Frontend
 - React.js
@@ -51,7 +51,7 @@ This project can also serve as a **starter template for building news or content
 
 ---
 
-# 📁 Project Structure
+# Project Structure
 
 ```
 News-Application
@@ -75,7 +75,7 @@ News-Application
 
 ---
 
-# ⚙️ Installation & Setup
+# Installation & Setup
 
 ### 1. Clone the repository
 
@@ -113,7 +113,7 @@ const apiKey = "YOUR_API_KEY";
 
 ---
 
-# ▶️ Run the Application
+# Run the Application
 
 Start the development server:
 
@@ -129,7 +129,7 @@ http://localhost:3000
 
 ---
 
-# 🖼 Application Workflow
+# Application Workflow
 
 1. The app sends a request to the News API  
 2. The API returns the latest news in JSON format  
@@ -139,7 +139,7 @@ http://localhost:3000
 
 ---
 
-# 📌 Example Features in the UI
+# Example Features in the UI
 
 - Headlines section
 - Category-based news (Technology, Sports, Business etc.)
@@ -149,7 +149,7 @@ http://localhost:3000
 
 ---
 
-# 🔮 Future Improvements
+# Future Improvements
 
 Possible upgrades for the project:
 
@@ -163,7 +163,7 @@ Possible upgrades for the project:
 
 ---
 
-# 🤝 Contributing
+# Contributing
 
 Contributions are welcome.
 
@@ -176,13 +176,13 @@ If you want to improve the project:
 
 ---
 
-# 📜 License
+# License
 
 This project is open source and available under the **MIT License**.
 
 ---
 
-# 👨‍💻 Author
+# Author
 
 **Bhabani Sankar Jana**
 
