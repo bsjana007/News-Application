@@ -42,7 +42,6 @@ const News = (props) => {
 	const fetchMoreData = async () => {
 		const nextPage = page + 1;
 		let url = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${props.apiKey}&page=${nextPage}&pageSize=${props.pageSize}`;
-		// let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=5fe2a8b8dfba4b5a9a516c5e97e66318&page=1&pageSize=${props.pageSize}`;
 		// setLoading(true);
 		setTimeout(() => {
 			setPage(nextPage);
