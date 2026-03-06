@@ -20,7 +20,6 @@ const News = (props) => {
 		props.setProgress(0);
 
 		let url = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
-		// let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=5fe2a8b8dfba4b5a9a516c5e97e66318&page=1&pageSize=${props.pageSize}`;
 		setLoading(true);
 		let data = await fetch(url);
 		props.setProgress(40);
@@ -38,17 +37,7 @@ const News = (props) => {
 		// eslint-disable-next-line
 	}, []);
 
-	// const previousPage = async () => {
-	// 	setPage(page - 1);
-	// 	updateNews();
-	// };
-
-	// const nextPage = async () => {
-	// 	if (!(page + 1 > Math.ceil(totalResults / 20))) {
-	// 		setPage(page + 1);
-	// 		updateNews();
-	// 	}
-	// };
+	
 
 	const fetchMoreData = async () => {
 		const nextPage = page + 1;
@@ -99,27 +88,6 @@ const News = (props) => {
 					</div>
 				</div>
 			</InfiniteScroll>
-			{/* <div className="container d-flex justify-content-between">
-					<button
-						disabled={page <= 1}
-						type="button"
-						className="btn btn-dark"
-						onClick={previousPage}
-					>
-						&larr; Previous
-					</button>
-					<button
-						disabled={
-							state.page + 1 >
-							Math.ceil(state.totalResults / props.pageSize)
-						}
-						type="button"
-						className="btn btn-dark"
-						onClick={nextPage}
-					>
-						Next &rarr;
-					</button>
-				</div> */}
 		</div>
 	);
 };
