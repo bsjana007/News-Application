@@ -1,0 +1,79 @@
+:root {
+	--bg-primary: #0f172a;
+	--bg-secondary: #1e293b;
+	--text-primary: #f8fafc;
+	--text-secondary: #94a3b8;
+	--accent-color: #3b82f6;
+	--accent-glow: rgba(59, 130, 246, 0.5);
+	--glass-bg: rgba(30, 41, 59, 0.6);
+	--glass-border: rgba(255, 255, 255, 0.08);
+	--font-heading: 'Outfit', sans-serif;
+	--font-body: 'Inter', sans-serif;
+}
+
+body {
+	margin: 0;
+	font-family: var(--font-body);
+	background-color: var(--bg-primary);
+	background-image: 
+		radial-gradient(circle at 15% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+		radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.15) 0%, transparent 50%);
+	background-attachment: fixed;
+	color: var(--text-primary);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+	font-family: var(--font-heading);
+	font-weight: 700;
+}
+
+/* Glassmorphism Utilities */
+.glass-effect {
+	background: var(--glass-bg);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border: 1px solid var(--glass-border);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Scrollbar for Infinite Scroll */
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-track {
+	background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--bg-secondary);
+	border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #334155;
+}
+
+/* Base Link Styles */
+a {
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+/* Buttons */
+.btn-premium {
+	background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+	color: white;
+	border: none;
+	border-radius: 8px;
+	padding: 8px 16px;
+	font-weight: 500;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.btn-premium:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+	color: white;
+}
