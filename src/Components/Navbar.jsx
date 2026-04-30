@@ -5,10 +5,24 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
 	return (
 		<div>
-			<nav className="navbar navbar-expand-lg navbar-dark fixed-top glass-effect" style={{ margin: '15px 15px 0 15px', padding: '10px 20px', borderRadius: '16px' }}>
+			<nav
+				className="navbar navbar-expand-lg navbar-dark fixed-top glass-effect"
+				style={{
+					margin: "15px 15px 0 15px",
+					padding: "10px 20px",
+					borderRadius: "16px",
+				}}
+			>
 				<div className="container-fluid">
-					<Link className="navbar-brand fs-4" style={{ color: '#fff', textShadow: '0 0 10px rgba(255,255,255,0.3)' }} to="/">
-						<span style={{ color: 'var(--accent-color)' }}>News</span>Hunt
+					<Link
+						className="navbar-brand fs-4"
+						style={{
+							color: "#fff",
+							textShadow: "0 0 10px rgba(255,255,255,0.3)",
+						}}
+						to="/"
+					>
+						<span style={{ color: "var(--accent-color)" }}>News</span>Hunt
 					</Link>
 					<button
 						className="navbar-toggler border-0"
@@ -27,7 +41,11 @@ const Navbar = () => {
 					>
 						<ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
 							<li className="nav-item">
-								<Link className="nav-link mx-2" aria-current="page" to="/">
+								<Link
+									className="nav-link mx-2"
+									aria-current="page"
+									to="/"
+								>
 									Home
 								</Link>
 							</li>
@@ -68,7 +86,7 @@ const Navbar = () => {
 								type="search"
 								placeholder="Search topics..."
 								aria-label="Search"
-								style={{ backdropFilter: 'none' }}
+								style={{ backdropFilter: "none" }}
 							/>
 							<button className="btn-premium" type="submit">
 								Search

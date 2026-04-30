@@ -5,12 +5,14 @@ import News from "./Components/News";
 import LoadingBar from "react-top-loading-bar";
 // import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import useInteractiveFavicon from "./useInteractiveFavicon";
 
 // function App() {
 // 	return <></>;
 // }
 
 function App() {
+	useInteractiveFavicon();
 	const pageSize = 12;
 	const apiKey = process.env.REACT_APP_NEWS_API_KEY;
 	const [progress, setProgress] = useState(0);

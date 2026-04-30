@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    .bg { fill: #0f172a; stroke: #3b82f6; stroke-width: 6; transition: all 0.3s ease; }
+    .text-n { font-family: system-ui, sans-serif; font-weight: 800; font-size: 50px; fill: #3b82f6; transition: fill 0.3s ease; }
+    .text-h { font-family: system-ui, sans-serif; font-weight: 800; font-size: 50px; fill: #f8fafc; transition: fill 0.3s ease; }
+    
+    @media (prefers-color-scheme: light) {
+      .bg { fill: #ffffff; stroke: #2563eb; }
+      .text-n { fill: #2563eb; }
+      .text-h { fill: #0f172a; }
+    }
+  </style>
+  <rect class="bg" width="88" height="88" x="6" y="6" rx="22" />
+  <text class="text-n" x="20" y="68">N</text>
+  <text class="text-h" x="54" y="68">H</text>
+</svg>
